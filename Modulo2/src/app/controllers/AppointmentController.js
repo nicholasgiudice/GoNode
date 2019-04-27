@@ -11,8 +11,8 @@ class AppointmentController {
     const { date } = req.body
 
     await Appointment.create({
-      user_id: 9,
-      provider_id: 10,
+      user_id: id,
+      provider_id: provider,
       date
     })
 
