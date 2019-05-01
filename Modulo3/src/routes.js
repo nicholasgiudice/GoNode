@@ -50,4 +50,9 @@ routes.post(
   handle(controllers.PurchaseController.store)
 )
 
+routes.post(
+  '/purchases/confirm',
+  handle(controllers.PurchaseController.confirm)
+)
+
 module.exports = routes
